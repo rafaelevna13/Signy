@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&family=Xanh+Mono&display=swap');
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.header_img {
+    margin-left: 30px;
+}
+
+body {
+    background-color: rgb(168, 196, 215);
+}
+
+h1 {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.connect_us {
+    background-color: rgb(225, 243, 255);
+    font-family: 'Poor Story', cursive;
+    font-family: 'Xanh Mono', monospace;
+    padding: 30px;
+    /* box-sizing: content-box; */
+    margin: 100px;
+}
+
+
+.submit {
+    margin-top: 50px !important;
+}
+.custom-control-input { 
+    margin-left: 14px;
+}
+.kartinka { 
+    position: absolute;
+}
+i { 
+    font-size: 35px;
+}

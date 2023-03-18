@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signy</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- <style>
+        body{background: url(img/backgraund.jpg) no-repeat;}
+    </style> -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__block">
+                    <a href="/" class="header__logo">
+                        <img src="img/logo_signy.svg" alt="">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <div class="header__nav_one">
+                        <ol>
+                            <li>
+                                <a class="header__not_button" href="#">Про нас</a>
+                            </li>
+                        </ol>
+                        <ol>
+                            <li>
+                                <a class="header__not_button" href="#">Цены</a>
+                            </li>
+                        </ol>
+                        <ol>
+                            <li>
+                                <a class="header__not_button" href="#">Акции</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="header__nav_two">
+                        <div class="header__nav_two_btn">
+                            <ol>
+                                <li><a href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">Вход</button></a></li>
+                            </ol>
+                            <ol>
+                                <!-- <li><a href="#"><button class="header__btn">Регистрация</button></a></li> -->
+                                <li><a href="links/regist.html">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            Регистрация
+                                        </button>
+                                    </a></li>
+                            </ol>
+                        </div>
+                        <div class="header__dropdown">
+                            <button onclick="myFunction()" class="header__dropbtn">Контакты</button>
+                            <div id="header__myDropdown" class="header__dropdown-content">
+                                <a href="#">+899 91 006 99 63</a>
+                                <a href="#">instagram</a>
+                                <a href="#">telegram</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--/container-->
+    </header>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/backgraund.svg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <section class="intro"> -->
+                    <section class="intro">
+                        <div class="container">
+                            <div class="intro__content">
+                                <div class="intro__block">
+                                    <p class="intro__title">
+                                        Цифровой документооборот <br> в три этапа
+                                    </p>
+                                    <img class="intro__title_img" src="img/123.svg" alt="">
+                                    <p class="intro__text2">Быстрая регистрация</p>
+                                    <p class="intro__text3">Мы создали, возможно, самую простую регистрация. <br>
+                                        Регистрируйся, полный
+                                        доступ к сервису и
+                                        <br>
+                                        1000 подписей документов в подарок
+                                    </p>
+                                    <a href="#"><button class="button__blle">ПОПРОБОВАТЬ БЕСПЛАТНО</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/container-->
+                    </section>
+                    <!--/intro-->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/back2.jpeg" class="d-block w-100" alt="..." width="1303px" height="925px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Метка второго слайда</h5>
+                    <p>Некоторый репрезентативный заполнитель для второго слайда.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/back3.jpeg" class="d-block w-100" alt="..." width="1303px" height="925px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Метка третьего слайда</h5>
+                    <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+
+
+    <!-- ТОЧЕЧКИ ЧЕРЕЗ БУТСТРАП -->
+    <div class="info">
+        <div class="container">
+            <div class="wrapper">
+                <div class="info__block">
+                    <div class="info__block_img">
+                        <img src="img/moment.png" alt="">
+                    </div>
+                    <div class="info__block_text">
+                        <h3>Моментально</h3>
+                        <p>Никаких задержек. <br> 1 секунда на подписание </p>
+                    </div>
+                </div>
+                <!--/block-->
+                <div class="info__block">
+                    <div class="info__block_img">
+                        <img src="img/global.png" alt="">
+                    </div>
+                    <div class="info__block_text">
+                        <h3>Глобально</h3>
+                        <p>Сервис доступен 24/7<br> со всех устройств </p>
+                    </div>
+                </div>
+                <!--/block-->
+                <div class="info__block">
+                    <div class="info__block_img">
+                        <img src="img/cash.png" alt="">
+                    </div>
+                    <div class="info__block_text">
+                        <h3>Экономно</h3>
+                        <p>В 30 раз дешевле чем <br> почта и курьеры </p>
+                    </div>
+                </div>
+                <!--/block-->
+            </div>
+        </div>
+        <!--/container-->
+    </div>
+    <!--/info-->
+
+    <section class="description">
+        <div class="container">
+            <div class="description__product">
+                <div class="description__product1">
+                    <div class="discription__text">
+                        <h2>Комфорт в работе</h2>
+                        <li>
+                            - Создавай документы по твоим личным привычным шаблонам. Это индивидуально!
+                        </li>
+                        <li>
+                        </li>
+                        - Настраивай порядок подписание документа, если вас несколько человек. Это ответственно!
+                        </li>
+                        <li>
+                            - Загружай XML файл с собственным шаблоном готового документа. Это удобно!
+                        </li>
+                        <li>
+                            - Работай в супер простом и понятном интерфейсе без сложностей. Это приятно!
+                        </li>
+                        <!-- <a href="#"> <button class="discription__btn">УЗНАТЬ БОЛЬШЕ</button> </a> -->
+                        <!-- Кнопка-триггер модального окна -->
+                        <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            УЗНАТЬ БОЛЬШЕ
+                                </button>
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Вы нажали узнать больше, а значит
+                                            вы заинтерисовались</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Закрыть"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Мы этому очень рады!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Закрыть</button>
+                                        <button type="button" class="btn btn-primary">Радоваться вместе с нами</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description__img">
+                        <img src="img/description_img.png" width="600px" height="340px" alt="">
+                    </div>
+                </div>
+
+                <div class="description__product2">
+                    <div class="description__img">
+                        <img src="img/description_img.png" width="600px" height="340px" alt="">
+                    </div>
+                    <div class="discription__text">
+                        <h2> Наш продукт это: </h2>
+                        <li>
+                            - Web версия без установки программного обеспечения
+                        </li>
+                        <li>
+                        </li>
+                        - Возможность бесплатно и безлимитно обрабатывать входящие документы
+                        </li>
+                        <li>
+                            - Простота интеграции с 1С и другими сервисами
+                        </li>
+                        <li>
+                            - Поддержка входа через Mobile ID
+                        </li>
+                        <a href="#"> <button type="button" class="btn btn-primary">ЗАРЕГИСТРИРОВАТЬСЯ</button> </a>
+
+                        <div class="modal" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Заголовок модального окна</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Закрыть"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Здесь идет основной текст модального окна</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Закрыть</button>
+                                        <button type="button" class="btn btn-primary">Сохранить изменения</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/container-->
+    </section>
+
+    <section class="block__section">
+        <div class="container">
+            <h2 class="block__title">
+                Пакеты цифровых подписей
+            </h2>
+            <div class="block__choice">
+                <div class="block__choice_all">
+                    <div class="block__choice_one">
+                        <p class="block__choice_type"> Demo </p>
+                        <p class="block__choice_text"> 30 документiв </p>
+                        <div class="block__choice_price">
+                            <p class="block__choice_price1"><b>0</b></p>
+                            <p class="block__choice_price2">грн/мiсяць</p>
+                        </div>
+                        <a href="#"><button class="block__btn">ЗАРЕГИСТРИРОВАТЬСЯ</button></a>
+                    </div>
+                </div>
+                <!--/block-->
+                <div class="block__choice_all">
+                    <div class="block__choice_one">
+                        <p class="block__choice_type"> Business </p>
+                        <p class="block__choice_text"> 1 000 документiв </p>
+                        <div class="block__choice_price">
+                            <p class="block__choice_price1"><b>1 000</b></p>
+                            <p class="block__choice_price2">грн/pik</p>
+                        </div>
+                        <a href="#"><button class="block__btn">ЗАКАЗАТЬ</button></a>
+                    </div>
+                </div>
+                <!--/block-->
+                <div class="block__choice_all">
+                    <div class="block__choice_one">
+                        <p class="block__choice_type"> Pro </p>
+                        <p class="block__choice_text"> 10 000 документiв </p>
+                        <div class="block__choice_price">
+                            <p class="block__choice_price1"><b>9 000</b></p>
+                            <p class="block__choice_price2">грн/pik</p>
+                        </div>
+                        <a href="#"><button class="block__btn">ЗАКАЗАТЬ</button></a>
+                    </div>
+                </div>
+                <!--/block-->
+                <div class="block__choice_all">
+                    <div class="block__choice_one">
+                        <p class="block__choice_type"> Individual </p>
+                        <p class="block__choice_text"> Необходима кiлькiсть <br> документiв </p>
+                        <a href="#"><button class="block__btn1">СВЯЗАТЬСЯ С НАМИ</button></a>
+                    </div>
+                </div>
+                <!--/block-->
+            </div>
+        </div>
+        <!--/container-->
+    </section>
+    <section class="process__section">
+        <div class="container">
+            <p class="process__title">+988 5 820 125 144</p>
+            <p class="process__subtitle">Подписано документов</p>
+            <p class="process__discription"> <i> Наша компания уже более 30 лет создает удобные <br> решения для бизнеса
+                    любого размера. Мы гордимся <br> Signy как безопасным и комфортным продуктом </i> </p>
+        </div>
+        <!--/container-->
+    </section>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <div class="container">
+            <!-- Full-width slides/quotes -->
+
+            <div class="mySlides">
+                <q>Мы живём в обществе, зависимом от науки и технологии, в котором никто ничего не знает ни о науке, ни
+                    о технологии</q>
+                <p class="author">- Карл Саган</p>
+            </div>
+
+            <div class="mySlides">
+                <q>Технология сама по себе является для человечества источником прогресса, но технология, умноженная на
+                    ненависть, ведет человечество к катастрофе</q>
+                <p class="author">- Симон Визенталь</p>
+            </div>
+
+            <div class="mySlides">
+                <q>Люди не понимают потрясающих возможностей разумного использования технологий</q>
+                <p class="author">- Жак Фреско</p>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots/bullets/indicators -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <!--end Slideshow container -->
+
+    <section class="img__content">
+        <div class="container">
+            <div class="img__content_info">
+                <p class="img__content_title">
+                    <b>Интересно пишем про</b>
+                </p>
+                <div class="img__content_p">
+                    <div class="img__content">
+                        <img src="img/друзья signy/1.png" alt="Notebook" style="width:100%;">
+                        <div class="img__content_text">
+                            <h5>28.05.2020</h5>
+                            <p>Lorem ipsum..</p>
+                        </div>
+                    </div>
+                    <div class="img__content">
+                        <img src="img/друзья signy/2.png" alt="Notebook" style="width:100%;">
+                        <div class="img__content_text">
+                            <h5>28.05.2020</h5>
+                            <p>Lorem ipsum..</p>
+                        </div>
+                    </div>
+                    <div class="img__content">
+                        <img src="img/друзья signy/3.png" alt="Notebook" style="width:100%;">
+                        <div class="img__content_text">
+                            <h5>28.05.2020</h5>
+                            <p>Lorem ipsum..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- img_content -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrapper">
+                <div class="foot-1">
+                    <div class="footer_label">
+                        <a href="/" class="footer_logo">
+                            <img src="img/logo_signy.svg" alt="">
+                        </a>
+                        <p class="copyright">
+                            © 2020 Signy
+                        </p>
+                    </div>
+            </div>
+        </div>
+        <!--/container-->
+    </footer>
+
+</body>
+
+</html>
